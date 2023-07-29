@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechGol Soluções Onlines</title>
+  <link rel="stylesheet" href="./main.css">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <!--Icon collapse-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>TECHGOL</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#sobre">Sobre</a>
+          </li>
+          <li>
+            <a href="#contato">contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="sobre">
+      <div class="container">
+        <div class="container-img">
+          <img src="./img/guitarist-concurso-guitarrista-do-ano-2018-1.webp" alt="fachada da loja solucoes Online">
+        </div>
+        <div>
+          <h2>Sobre nós</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cum, animi a dolor qui doloribus
+            deleniti totam minima, eveniet consectetur eligendi delectus cupiditate eos veniam. Explicabo delectus
+            pariatur sit voluptates.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolores, ducimus qui tempore voluptas
+            aliquam.</p>
+          <ul class="brands-list">
+            <li><img src="./img/microsoft.png" alt="logo microsoft"></li>
+            <li><img src="./img/vercel.png" alt="logo vercel"></li>
+            <li><img src="./img/stylecss.png" alt="logo css"></li>
+            <li><img src="./img/brandhtml.png" alt="logo html"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="contato">
+      <div class="container">
+        <h2>Contato</h2>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="row">
+      <div class="col-3">
+        <nav>
+          <ul>
+            <li>Sobre nós</li>
+            <li>Contato</li>
+            <li>FAQ</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-3">
+        <nav>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-3">
+        <nav>
+          <ul>
+            <li>Git</li>
+            <li>Catalogo</li>
+            <li>Beneficios</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-3">
+        <nav>
+          <ul>
+            <li>Git</li>
+            <li>Catalogo</li>
+            <li>Beneficios</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script>
+  let span = document.querySelector('.material-symbols-outlined');
+  let isTopHidden = false;
+
+  span.addEventListener('click', () => {
+    if (isTopHidden) {
+      span.style.clipPath = 'inset(50% 0 0 0)';
+      isTopHidden = false;
+    } else {
+      span.style.clipPath = 'inset(0 0 50% 0)';
+      isTopHidden = true;
+    }
+  });
+
+  let collapseButton = document.querySelector('#collapse-button');
+  let collapseContent = document.querySelector('#collapse-content');
+
+  collapseButton.addEventListener('click', () => {
+    if (collapseContent.style.display === 'block') {
+      collapseContent.style.display = 'none';
+    } else {
+      collapseContent.style.display = 'block';
+    }
+  });
+</script>
+
+</html>
