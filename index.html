@@ -23,7 +23,7 @@
       <nav>
         <ul>
           <li>
-            <a href="#sobre">Sobre</a>
+            <a href="#sobre">Sobre a loja</a>
           </li>
           <li>
             <a href="#contato">contato</a>
@@ -57,75 +57,52 @@
     <section id="contato">
       <div class="container">
         <h2>Contato</h2>
+        <div class="contact-methods">
+          <div>
+            <h3>Fale conosco</h3>
+            <form>
+              <input type="text" name="nome" id="nome" placeholder="Seu nome" />
+              <input type="email" name="email" id="email" placeholder="Seu e-mail" />
+              <input type="tel" placeholder="Seu telefone (opcional)" />
+              <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="social-links">
+            <h3>Nos acompanhe</h3>
+            <ul>
+              <li>
+                <a href="#" title="Siga-nos no Instagram">
+                  <img src="./img/logo-instagram.avif" alt="Logo do Instagram">
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Siga-nos no Facebook">
+                  <img src="./img/facebook-logo-3-1.png" alt="Logo do Facebook">
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Visite nosso canal no Youtube">
+                  <img src="./img/logo-youtube-2048.png" alt="Logo do Youtube">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Venha até nós</h3>
+            <p>
+              Rua Front-End Nº159, Vila Html - Browser-IIS
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="row">
-      <div class="col-3">
-        <nav>
-          <ul>
-            <li>Sobre nós</li>
-            <li>Contato</li>
-            <li>FAQ</li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col-3">
-        <nav>
-          <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Youtube</li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col-3">
-        <nav>
-          <ul>
-            <li>Git</li>
-            <li>Catalogo</li>
-            <li>Beneficios</li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col-3">
-        <nav>
-          <ul>
-            <li>Git</li>
-            <li>Catalogo</li>
-            <li>Beneficios</li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+    <span class="rodape">&copy copyright Todos os direitos reservados por <a href="https://github.com/gbri-dev"
+        target="_blank">Gabriel
+        C Silva</a></span>
   </footer>
 </body>
-
-<script>
-  let span = document.querySelector('.material-symbols-outlined');
-  let isTopHidden = false;
-
-  span.addEventListener('click', () => {
-    if (isTopHidden) {
-      span.style.clipPath = 'inset(50% 0 0 0)';
-      isTopHidden = false;
-    } else {
-      span.style.clipPath = 'inset(0 0 50% 0)';
-      isTopHidden = true;
-    }
-  });
-
-  let collapseButton = document.querySelector('#collapse-button');
-  let collapseContent = document.querySelector('#collapse-content');
-
-  collapseButton.addEventListener('click', () => {
-    if (collapseContent.style.display === 'block') {
-      collapseContent.style.display = 'none';
-    } else {
-      collapseContent.style.display = 'block';
-    }
-  });
-</script>
 
 </html>
